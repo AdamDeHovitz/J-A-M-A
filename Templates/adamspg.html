@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Welcome!</title>
+
+        <link rel="stylesheet"
+        href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<div id="style">
+{% block style %}{% endblock style %}
+</div> <!--style-->
+
+
+</head>
+
+
+<form class="pure-form pure-form-aligned" method="POST" action="/">
+<div id="opener" class="title">
+ {% block body %}{% endblock body %}
+</div> <!--opener-->
+
+<center>
+{% if answer %}
+<section class="c">
+<fieldset>
+The answer to your question is: {{answer}}
+</div>
+
+
+</section><br>
+{% endif %}
+<section class="c">
+<fieldset>
+<div class="pure-control-group"><br>
+  <label for="question">What is your {% if answer %}next{% endif %} question?</label>
+  <input id= "question" name = "question"type="text" placeholder="Who is I?">
+</div>
+
+
+</section><br><font face ="Baskerville">
+<button type = "submit" class="pure-button pure-button-primary"
+href="/"> Answers ahead!</button>
+
+</fieldset>
+</center>
+</form>
+</body>
+</html>
