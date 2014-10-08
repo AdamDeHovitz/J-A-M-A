@@ -33,3 +33,7 @@ if __name__=="__main__":
 #    print re.findall(r"([A-Z][a-z]{1,7}[a-z]+\s\d{,2},\s\d{,4})" , data) #recognizes dates in format: Month #, #
 
 #findnames(data)
+
+#def find_names(string):
+#    pattern = re.compile("(?:(?:M(?:r|s|rs).?|The) )?(?!The|M(?:r|s|rs).?)[A-Z][a-z]+ (?:(?:Mc|O')?[A-Z][a-z]+)+")
+#    return re.findall(pattern, string)
