@@ -22,3 +22,14 @@ def start():
 if __name__=="__main__":
     app.debug=True
     app.run()
+
+
+
+#f = open('dates', 'r') #data will be the stuff from web pages
+#data = f.read()
+#f.close()
+
+#def findnames(data):
+#    print re.findall(r"([A-Z][a-z]{1,7}[a-z]+\s\d{,2},\s\d{,4})" , data) #recognizes dates in format: Month #, #
+
+#findnames(data)
