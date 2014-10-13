@@ -1,6 +1,6 @@
 <<<<<<< Updated upstream
 from flask import Flask,render_template, request
-import random
+import random, google
 
 app = Flask(__name__)
 
@@ -105,8 +105,16 @@ if __name__=="__main__":
 #     return render_template("index.html", answer=answer)
 
 
+#urls = []
+
+#def getLinks(question):
+ #   from google import search
+  #  for url in search(question, stop = 10): ##might also use get_urls()
+   #     urls.append(url)
+    #return urls
+
 # def find_answer(question):
-#     # get list of links from Maria here
+#   getLinks(question)
 #     # fetch all documents and load here
 
 #     question_word = question.split()[0].lower()
