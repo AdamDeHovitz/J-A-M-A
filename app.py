@@ -1,5 +1,7 @@
-from flask import Flask, render_template, request
 import random
+import re
+
+from flask import Flask, render_template, request
 import google
 
 app = Flask(__name__)
@@ -56,60 +58,57 @@ def picture(answer):
 
     return l
 
+
 def get_answer(question):
     corpus = fetch_pages(question)
     corpus = ' '.join(corpus)
 
     question_word = question.split()[0].lower()
     if question_word == "who":
-        # look for names
-        pass
+        data = find_names(corpus)
     elif question_word == "when":
-        # look for dates
-        pass
+        data = find_dates(corpus)
+    else:
+        return
 
-    return None
+    frequency = count_frequency(data)
+    answer = max(frequency, key=frequency.get)
+
+    return answer
+
 
 def fetch_pages(question):
     return [google.get_page(url) for url in google.search(question, stop=10)]
 
 
+# recognizes dates in format: Month #, #
+def find_dates(string):
+    count_dict = {}
+    for date in re.findall(r"([A-Z][a-z]{1,7}[a-z]+\s\d{,2},\s\d{,4})", string):
+        if date in count_dict:
+            count_dict[date] = count_dict[date] + 1
+        else:
+            count_dict[date] = 1
+
+    return count_dict
+
+
+def find_names(string):
+    name_pattern = re.compile("(?:(?:M(?:r|s|rs).?|The) )?(?!The|M(?:r|s|rs).?)[A-Z][a-z]+ (?:(?:Mc|O')?[A-Z][a-z]+)+")
+    return re.findall(name_pattern, string)
+
+
+def count_frequency(data):
+    count_dict = {}
+    for item in data:
+        if item in count_dict:
+            count_dict[item] = count_dict[item] + 1
+        else:
+            count_dict[item] = 1
+
+    return count_dict
+
+
 if __name__ == "__main__":
     app.debug = True
     app.run()
-
-
-# def findnames(data):
-# print re.findall(r"([A-Z][a-z]{1,7}[a-z]+\s\d{,2},\s\d{,4})" , data)
-# #recognizes dates in format: Month #, #
-
-# findnames(data)
-
-# def find_names(string):
-#    pattern = re.compile("(?:(?:M(?:r|s|rs).?|The) )?(?!The|M(?:r|s|rs).?)[A-Z][a-z]+ (?:(?:Mc|O')?[A-Z][a-z]+)+")
-#    return re.findall(pattern, string)
-
-# from flask import Flask, render_template, request
-
-# app = Flask(__name__)
-
-
-# @app.route("/", methods=["POST", "GET"])
-# def start():
-#     question = None
-
-#     if request.method == 'POST':
-#         question = request.form["question"].strip()
-#         answer = find_answer(question)
-
-#     return render_template("index.html", answer=answer)
-
-
-#urls = []
-
-
-
-
-# if __name__ == "__main__":
-#     app.debug = True
-#     app.run()
