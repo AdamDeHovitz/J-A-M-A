@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from flask import Flask,render_template, request
 import random
 
@@ -12,7 +13,7 @@ def start():
     if request.method == 'POST':
         question = request.form["question"]
         #Operate on question using google stuff here
-    if (question != None):    
+    if (question != None):
         l = picture(question);
         return render_template("index.html", answer = question, name = l[0], image = l[1], adjective = l[2]  )
 
@@ -38,13 +39,13 @@ def titleReader ():
 
 
 def picture(answer):
-   
+
     l = []
-    
-     
 
 
-    
+
+
+
 
 
     imgRepo = imgReader()
@@ -57,7 +58,7 @@ def picture(answer):
     titles=titleReader()
 
     l.append(titles[random.randint(0, len(titles)-1)])
-        
+
 
     #get_it.close()
 
@@ -72,7 +73,7 @@ if __name__=="__main__":
     app.debug=True
     app.run()
 
-    
+
 
 
 #f = open('dates', 'r') #data will be the stuff from web pages
@@ -87,3 +88,38 @@ if __name__=="__main__":
 #def find_names(string):
 #    pattern = re.compile("(?:(?:M(?:r|s|rs).?|The) )?(?!The|M(?:r|s|rs).?)[A-Z][a-z]+ (?:(?:Mc|O')?[A-Z][a-z]+)+")
 #    return re.findall(pattern, string)
+
+# from flask import Flask, render_template, request
+
+# app = Flask(__name__)
+
+
+# @app.route("/", methods=["POST", "GET"])
+# def start():
+#     question = None
+
+#     if request.method == 'POST':
+#         question = request.form["question"].strip()
+#         answer = find_answer(question)
+
+#     return render_template("index.html", answer=answer)
+
+
+# def find_answer(question):
+#     # get list of links from Maria here
+#     # fetch all documents and load here
+
+#     question_word = question.split()[0].lower()
+#     if question_word == "who":
+#         # look for names
+#         pass
+#     elif question_word == "when":
+#         # look for dates
+#         pass
+
+#     return None
+
+
+# if __name__ == "__main__":
+#     app.debug = True
+#     app.run()
