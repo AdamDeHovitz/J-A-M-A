@@ -10,11 +10,12 @@ def start():
     question = None
     answer = None
     if request.method == 'POST':
-        question = request.form["question"]
-        # Operate on question using google stuff here
-    if (question != None):
+        question = request.form["question"].strip()
+        answer = get_answer(question)
+    if (question is not None):
         l = picture(question)
-        return render_template("index.html", answer=question, name=l[0], image=l[1], adjective=l[2])
+        return render_template("index.html", answer=answer,
+                               name=l[0], image=l[1], adjective=l[2])
 
     return render_template("index.html")
 
@@ -38,7 +39,6 @@ def titleReader():
 
 
 def picture(answer):
-
     l = []
 
     imgRepo = imgReader()
@@ -56,15 +56,28 @@ def picture(answer):
 
     return l
 
+def get_answer(question):
+    corpus = fetch_pages(question)
+    corpus = ' '.join(corpus)
+
+    question_word = question.split()[0].lower()
+    if question_word == "who":
+        # look for names
+        pass
+    elif question_word == "when":
+        # look for dates
+        pass
+
+    return None
+
+def fetch_pages(question):
+    return [google.get_page(url) for url in google.search(question, stop=10)]
+
 
 if __name__ == "__main__":
     app.debug = True
     app.run()
 
-
-# f = open('dates', 'r') #data will be the stuff from web pages
-#data = f.read()
-# f.close()
 
 # def findnames(data):
 # print re.findall(r"([A-Z][a-z]{1,7}[a-z]+\s\d{,2},\s\d{,4})" , data)
@@ -94,25 +107,7 @@ if __name__ == "__main__":
 
 #urls = []
 
-# def getLinks(question):
- #   from google import search
-    # for url in search(question, stop = 10): ##might also use get_urls()
-   #     urls.append(url)
-    # return urls
 
-# def find_answer(question):
-#   getLinks(question)
-# fetch all documents and load here
-
-#     question_word = question.split()[0].lower()
-#     if question_word == "who":
-# look for names
-#         pass
-#     elif question_word == "when":
-# look for dates
-#         pass
-
-#     return None
 
 
 # if __name__ == "__main__":
