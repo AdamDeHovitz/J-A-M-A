@@ -16,7 +16,7 @@ def start():
         answer = get_answer(question)
     if (question is not None):
         l = picture(question)
-        return render_template("index.html", answer=answer,
+        return render_template("index.html", question=question, answer=answer,
                                name=l[0], image=l[1], adjective=l[2])
 
     return render_template("index.html")

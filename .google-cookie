@@ -1,0 +1,34 @@
+#LWP-Cookies-2.0
+Set-Cookie3: TMog=g125171fc2d066e79676c6f62653795; path="/"; domain=".about.com"; path_spec; domain_dot; expires="2082-11-01 03:43:57Z"; version=0
+Set-Cookie3: session-id="179-7280097-5181253"; path="/"; domain=".amazon.com"; path_spec; domain_dot; expires="2036-01-01 08:00:01Z"; version=0
+Set-Cookie3: session-id-time=2082787201l; path="/"; domain=".amazon.com"; path_spec; domain_dot; expires="2036-01-01 08:00:01Z"; version=0
+Set-Cookie3: session-token="JYqiYJT14Ovxe+vsvWLqC/DQ33LBlxnIaChS/BGYE/xFPk5xFAGAmjWw9c4g2j5o17S5FHsmW0C2ppZCt3aeqtWxV2et2j3UNyl8sgeCkvIlsG3oh0r5pm4Qtel1nuS5LQEqu6Njc8txYQhCMyD4siMx95WBYTm3TWEatLyM1W5n3g//8hGmzKN5KluMXGUGw488E/g16upyqJRPvAInOUaF4bXNsGKXi9O522JDOqLGoqvZ6wLhBokdvfNTJc8CsYpHF2UunpM="; path="/"; domain=".amazon.com"; path_spec; domain_dot; expires="2034-10-09 00:30:41Z"; version=0
+Set-Cookie3: ubid-main="188-5597154-4727450"; path="/"; domain=".amazon.com"; path_spec; domain_dot; expires="2036-01-01 08:00:01Z"; version=0
+Set-Cookie3: x-wl-uid="1Lr1iYJ3tdAdWYnrLO5u7pGr1mK1OLdgfSyILiCA9ChReWs/+IZdBWcee0R3GaNVCJmffyxo+q7Q="; path="/"; domain=".amazon.com"; path_spec; domain_dot; expires="2036-01-01 08:00:01Z"; version=0
+Set-Cookie3: BBC-UID="051423ac164f0e07c7eb6411b1d9c5c300752d169e380329c305fabdff6985600Mozilla%2f4%2e0%20%28compatible%3b%20MSIE%208%2e0%3b%20Windows%20NT%206%2e0%29"; path="/"; domain=".bbc.co.uk"; path_spec; expires="2015-10-14 00:35:51Z"; version=0
+Set-Cookie3: bcomID=4998639630229230419; path="/"; domain=".britannica.com"; path_spec; expires="2024-10-11 00:47:42Z"; version=0
+Set-Cookie3: SESS49e34f279b675da5f802db65316b9ef4=7huh6tsk8socutt75ibuf5ulc5; path="/"; domain=".carm.org"; path_spec; domain_dot; expires="2014-11-06 04:03:07Z"; version=0
+Set-Cookie3: __cfduid=d995ac31587b27c610582ca85c8ef93a41413246596213; path="/"; domain=".carm.org"; path_spec; domain_dot; expires="2019-12-23 23:50:00Z"; HttpOnly=None; version=0
+Set-Cookie3: fly_default_edition=us; path="/"; domain=".cnet.com"; path_spec; domain_dot; expires="2014-10-21 01:22:00Z"; version=0
+Set-Cookie3: fly_device=desktop; path="/"; domain=".cnet.com"; path_spec; domain_dot; expires="2014-10-21 01:21:27Z"; version=0
+Set-Cookie3: fly_geo="{\"countryCode\": \"us\"}"; path="/"; domain=".cnet.com"; path_spec; domain_dot; expires="2014-10-21 01:21:27Z"; version=0
+Set-Cookie3: fly_zip="11201-11226+11228-11239+11241-11243+11245+11247+11249+11251-11252+11256"; path="/"; domain=".cnet.com"; path_spec; domain_dot; expires="2014-10-21 01:21:27Z"; version=0
+Set-Cookie3: NID="67=U0QE0C-2pObIZ84rDQvpglWL6htmhhjSInEhWURZLcMVlhEZXmo6b186FnVp4zkIsH9pCPNsOAIacTB8oVCTefEDBFvbnlNV3Uis0L6X7lLrKSkAMEOZup_ctdmB5ClK"; path="/"; domain=".google.com"; path_spec; domain_dot; expires="2015-04-15 00:29:45Z"; HttpOnly=None; version=0
+Set-Cookie3: PREF="ID=8743cae25061f36c:U=9c97998ba8dfac8e:FF=0:TM=1413246585:LM=1413246587:S=CrDImnMffX-SkHfH"; path="/"; domain=".google.com"; path_spec; domain_dot; expires="2016-10-13 00:29:47Z"; version=0
+Set-Cookie3: session-id="948-4196444-5842280"; path="/"; domain=".imdb.com"; path_spec; domain_dot; expires="2082-11-01 03:49:40Z"; version=0
+Set-Cookie3: session-id-time=1570926932; path="/"; domain=".imdb.com"; path_spec; domain_dot; expires="2082-11-01 03:49:40Z"; version=0
+Set-Cookie3: uu="BCYt0Am_mK3yc6TPp-QEYT5EcKgBCup-DYbhs-4riG4z2F1l1lok9_4wmBpZPnRHLobhFgqcsJ5C%0D%0AOoqlFtZXjqmt6FhXza4Hj40phW2SqKnxvK-9ii3cXOCBikPULFBv3aaPlIKkOHQe6-Iugjwh_HtI%0D%0AtaU1FaZeO6hM3lTWogx5Alv0vzxvvh_VKu5Qq3QchLV3UgX-S9Vl9-MouU_-S0cqG74wOrxd68VK%0D%0AQoFEWMctrdM1djy05vSlIS7b_wOivlrps2Mj8YU7zDHSVOg2GBqUBg%0D%0A"; path="/"; domain=".imdb.com"; path_spec; domain_dot; expires="2082-11-01 03:49:40Z"; version=0
+Set-Cookie3: __cfduid=dfad06542554691fe811243919d85f1dc1413247681743; path="/"; domain=".shmoop.com"; path_spec; domain_dot; expires="2019-12-23 23:50:00Z"; HttpOnly=None; version=0
+Set-Cookie3: wikia_beacon_id=WZZMIu0sPx; path="/"; domain=".wikia.com"; path_spec; domain_dot; expires="2015-04-12 00:35:38Z"; version=0
+Set-Cookie3: wsjregion="na%2Cus"; path="/"; domain=".wsj.com"; path_spec; domain_dot; expires="2014-11-13 01:02:08Z"; version=0
+Set-Cookie3: demo="\"424f49ec2dced7ce02f6001393862852476fff56:{\\\"_city_region\\\": \\\"North Salem\\054NY\\\"\\054 \\\"bf\\\": 0\\054 \\\"dma\\\": 501}\""; path="/"; domain=".www.sodahead.com"; path_spec; expires="2015-10-14 05:02:48Z"; version=0
+Set-Cookie3: B="9csgfdda3osm5&b=3&s=b3"; path="/"; domain=".yahoo.com"; path_spec; domain_dot; expires="2016-10-14 00:48:05Z"; version=0
+Set-Cookie3: VISITOR_INFO1_LIVE=PbOrXbi3nSM; path="/"; domain=".youtube.com"; path_spec; domain_dot; expires="2015-06-14 13:14:38Z"; version=0
+Set-Cookie3: cmi_country=US; path="/"; domain="creation.com"; path_spec; expires="2015-10-14 00:33:48Z"; version=0
+Set-Cookie3: welcome_video=1; path="/"; domain="creation.com"; expires="2029-07-27 00:30:51Z"; version=0
+Set-Cookie3: _promos_seen="%5B%5D"; path="/"; domain="www.comicvine.com"; path_spec; expires="2014-11-14 05:02:59Z"; version=0
+Set-Cookie3: device_view=full; path="/"; domain="www.comicvine.com"; path_spec; expires="2014-11-13 08:00:00Z"; httponly=None; version=0
+Set-Cookie3: sptg="%5B%5D"; path="/"; domain="www.comicvine.com"; path_spec; expires="2014-10-28 05:02:59Z"; httponly=None; version=0
+Set-Cookie3: nlivc="ECE%7Bz%05%14%2Cfq"; path="/"; domain="www.shmoop.com"; path_spec; expires="2014-10-21 01:02:10Z"; version=0
+Set-Cookie3: pageViewCount=_CGz; path="/"; domain="www.shmoop.com"; path_spec; expires="2014-10-21 01:02:10Z"; version=0
+Set-Cookie3: pageViewsPerDialog=_CCz; path="/"; domain="www.shmoop.com"; path_spec; expires="2014-10-21 01:02:10Z"; version=0
